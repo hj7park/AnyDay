@@ -1,36 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-html {
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 
-body {
-    margin: 0px;
-    padding: 0px;
-    width:1920px;
-    height:2371px;
-    background-color: #FBF6EF;
-    background-image:url('Assets/background.png');
-    background-size: 50%;
-    background-repeat:no-repeat;
-}
 
 *{
+    color:#1E4755;
     font-family: 'Roboto', sans-serif;
 }
 
-main{
+.layout{
+    position:relative;
 }
+
+
+.background{
+    margin: 0px;
+    padding: 0px;
+    width:1920px;
+    height:2371px;    
+    background-color: #FBF6EF;
+    opacity:1;
+    color:#1E4755;
+}
+.background::before{
+    content:"";
+    background-image:url('Assets/background.png');
+    background-size: 100%;
+    background-repeat:no-repeat;
+    position: absolute;
+    top:-177.78px;
+    left:328px;
+    height:1320px;
+    width:1596px;
+}
+
 
 
 .nav {
     display:-webkit-flex;
     display:flex;
     list-style-type:none;
-    padding:50px;
+    padding-left:137px;
+    padding-top:53px;
     align-items: center;
     height: 50px;
     margin:0;
 }
 .left {
+    color:black;
+    font-weight: bold;
     margin-right:auto;
 }
 
@@ -40,11 +56,210 @@ main{
 a{
     font-size:23px;
     text-decoration:none;
+    opacity: 1;
+    letter-spacing: -0.46px;
+    text-transform: capitalize;
 }
-.first a{
+#first a{
     color:#C2855F;
     text-decoration:underline;
+    text-underline-offset: 5px;
 }
 .nav p{
     font-size:49px;
+}
+
+.photo{
+    position:absolute;
+    top:226px;
+    left:0px;
+    width:879px;
+    height:856px;
+}
+
+.best{
+    position:absolute;
+    top:320px;
+    left:1079px;
+    width:650px;
+    height:200px;
+    font-size:100px;
+    text-align: center;
+    letter-spacing: -2px;
+    text-transform: capitalize;
+}
+
+.dotdotdot{
+    position: absolute;
+    top: 575px;
+    left: 1389px;
+}
+.dotdotdot img{
+    width: 4px;
+    height: 200px;
+}
+
+
+
+.dot {
+    position:absolute;
+    top: 812px;
+    left: 1381px;
+    height: 21px;
+    width: 21px;
+    background-color: #1E4755;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.anydayLove{
+    position:absolute;
+    top: 868px;
+    left: 1329px;
+    width: 124px;
+    height: 68px;
+    text-align: center;
+}
+
+.textLine1{
+    display:inline-block;
+    font-size:23px;
+    padding-bottom:14px;
+    letter-spacing: -0.46px;
+    margin:0;
+}
+.textLine2{
+    font-size:31px;
+    font-weight: bold;
+    letter-spacing: -0.62px;
+    line-height:20px;
+}
+
+
+.arrow{
+    position:absolute;
+    top: 984px;
+    left: 1381px;
+    width: 29px;
+    height: 17px;
+}
+
+#fname{
+    position:absolute;
+    top: 1384px;
+    left: 211px;
+    font-size:25px;
+    letter-spacing:-0.5px;
+}
+
+#lname{
+    position:absolute;
+    top: 1539px;
+    left: 211px;
+    font-size:25px;
+    letter-spacing:-0.5px;
+}
+
+#email{
+    position:absolute;
+    top: 1710px;
+    left: 214px;
+    font-size:25px;
+    letter-spacing:-0.5px;
+}
+
+#fnameInput{
+    position:absolute;
+    top: 1451px;
+    left: 209px;
+    width:495px;
+    font-size:27px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #1E4755;
+    padding-bottom: 8px;
+}
+
+
+
+#lnameInput{
+    position:absolute;
+    top: 1606px;
+    left: 209px;
+    width:495px;
+    font-size:27px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #1E4755;
+    padding-bottom: 8px;
+}
+
+#emailInput{
+    position:absolute;
+    top: 1777px;
+    left: 209px;
+    width:495px;
+    font-size:27px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #1E4755;
+    padding-bottom: 8px;
+}
+
+::placeholder{
+    color:#1E4755;
+    opacity:0.55;
+}
+
+#formButton{
+    position:absolute;
+    text-align:center;
+    top: 1892px;
+    left: 205px;
+    width: 254px;
+    height: 67px;
+    background-color:#C2855F;
+    color:white;
+    font-size:20px;
+    border:none;
+}
+#formButton:hover{
+    border-radius: 0px 20px 0px 0px;
+}
+
+
+#bottomRightText{
+    text-align: center;
+}
+
+#bottomRightText #thankYou{
+    position:absolute;
+    top: 1506px;
+    left: 1153px;
+    width: 482px;
+    font-size:100px;
+    letter-spacing: -2px;
+}
+
+#emailInfoText{
+    position:absolute;
+    top: 1662px;
+    left: 1186px;
+    width: 416px;
+    font-size:25px;
+    letter-spacing: -0.5px;
+}
+
+.dot2 {
+    position:absolute;
+    top: 1772px;
+    left: 1384px;
+    height: 20px;
+    width: 20px;
+    background-color: #1E4755;
+    border-radius: 50%;
+    display: inline-block;
 }
